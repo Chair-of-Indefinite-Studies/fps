@@ -6,7 +6,7 @@
     "dvberkel <daan.v.berkel.1980@gmail.com>"
   ],
   "description": "Measures frames per second",
-  "main": "cois-fps.js",
+  "main": "fps.js",
   "keywords": [
     "fps"
   ],
