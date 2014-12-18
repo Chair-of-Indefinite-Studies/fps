@@ -12,10 +12,29 @@
 		}
 	};
 
+	var defaultOptions = {
+		'clock': now,
+		'strategy': fps.averageStrategy(20)
+	}
+
+	function throwOnUnknownOption(options){
+		var offendingKeys = [];
+		for (var key in options){
+			if (!defaultOptions[key]) {
+				offendingKeys.push(key);
+			}
+		}
+		if (offendingKeys.length > 0) {
+			throw new Error('unknown options: ' + offendingKeys
+							.map(function(key){ return '\'' + key + '\''; })
+							.join(', '));
+		}
+	}
+
 	var FrameCounter = fps.FrameCounter = function(options){
-		options = options || {};
-		this.clock = options.clock || now;
-		this.strategy = options.strategy || fps.averageStrategy(20);
+		throwOnUnknownOption(options = options || {});
+		this.clock = options.clock || defaultOptions.clock;
+		this.strategy = options.strategy || defaultOptions.strategy;
 		this.lastTime = this.clock();
 		this._fps = 0;
 	};

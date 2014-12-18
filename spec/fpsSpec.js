@@ -45,6 +45,14 @@ describe('fps', function(){
 
 			expect(counter.fps()).toBe(2);
 		});
+
+		it('should throw an error on unknown option', function(){
+			function unknownOption(){
+				new fps.FrameCounter({ 'unknown options in options hash': true });
+			};
+
+			expect(unknownOption).toThrow();
+		});
 	});
 
 	describe('averageStrategy', function(){

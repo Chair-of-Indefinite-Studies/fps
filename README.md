@@ -47,7 +47,9 @@ setInterval(function(){
 
 ### Options
 
-Options are provided with an options hash.
+Options are provided with an options hash. The options that are
+supported are described below. If unknown options are provided an
+exception is thrown.
 
 #### clock
 
