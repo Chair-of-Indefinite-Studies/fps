@@ -71,3 +71,21 @@ It is provided with two arguments
 
 1. `currentTime`. The current time as reported by the `clock`.
 2. `lastTime`. The previous time `registerFrame` was called.
+
+Development
+-----------
+
+We use [gulp][] to manage our minification of our javascript
+files. You acquire it with the following command:
+
+```sh
+npm install
+```
+
+You run it with
+
+```sh
+gulp
+```
+
+[gulp]: http://gulpjs.com/
