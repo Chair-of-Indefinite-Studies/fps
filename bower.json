@@ -17,7 +17,8 @@
     "bower_components",
     "spec",
     "SpecRunner.html",
-    "package.json"
+    "package.json",
+    "gulpFile.js"
   ],
   "devDependencies": {
     "jasmine": "~2.1.3"
