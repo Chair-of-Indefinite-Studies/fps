@@ -15,8 +15,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "spec",
+    "SpecRunner.html"
   ],
   "devDependencies": {
     "jasmine": "~2.1.3"
