@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Chair-of-Indefinite-Studies/fps/issues"
   },
-  "homepage": "https://github.com/Chair-of-Indefinite-Studies/fps"
+  "homepage": "https://github.com/Chair-of-Indefinite-Studies/fps",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
 }
