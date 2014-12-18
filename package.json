@@ -1,0 +1,23 @@
+{
+  "name": "fps",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Measures frames per second",
+  "main": "fps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chair-of-Indefinite-Studies/fps.git"
+  },
+  "keywords": [
+    "fps"
+  ],
+  "author": "dvberkel <daan.v.berkel.1980@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chair-of-Indefinite-Studies/fps/issues"
+  },
+  "homepage": "https://github.com/Chair-of-Indefinite-Studies/fps"
+}
