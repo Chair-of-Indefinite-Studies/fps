@@ -44,3 +44,28 @@ setInterval(function(){
 	fpsSpan.textContent = counter.fps() + ' fps';
 }, 1000); // update every second
 ```
+
+### Options
+
+Options are provided with an options hash.
+
+#### clock
+
+*default* `function(){ return new Date(); }`
+
+Responsible for keeping track of time. Used when `registerFrame` is
+called. When called should return the milliseconds elapsed since an
+epoch, e.g. 1 January 1970.
+
+#### strategy
+
+*default* `fps.averageStrategy(20)`
+
+Responsible for the actual calculation of the frames per second. When
+called should return the frames per second that will be reported by a
+call to the `fps` method.
+
+It is provided with two arguments
+
+1. `currentTime`. The current time as reported by the `clock`.
+2. `lastTime`. The previous time `registerFrame` was called.
